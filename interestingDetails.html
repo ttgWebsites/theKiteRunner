@@ -1,0 +1,62 @@
+<html>
+<head>
+
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.0/jquery.mobile-1.3.0.min.css" />
+<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.3.0/jquery.mobile-1.3.0.min.js"></script>
+<script src="scripts.js"></script>
+    
+
+<title>Home</title>
+</head>
+<body>
+	<div data-role="page" id="interestingDetails">
+		<div data-role="panel" id="menuPanel" data-theme="a" data-position-fixed="true">
+			<ul data-role="listview" data-theme="a">
+				<li><a href="basicInfo.html">Basic Info</a></li>
+				<li><a href="interestingDetails.html" class="ui-btn-active ui-state-persist">Interesting Details</a></li>
+				<li><a href="bookSummary.html">Book Summary</a></li>
+				<li><a href="themes.html">Themes</a></li>
+				<li><a href="characters.html">Characters</a></li>
+				<li><a href="chapterSummaries.html">Chapter Summaries</a></li>
+				<li><a href="essayTopics.html">Essay Topics</a></li>
+			</ul>
+		</div><!--PANEL-->	
+		<div data-role="header" data-id="fixhead" data-position="fixed" data-tap-toggle="false">
+			<a href="#menuPanel" data-role="button" data-iconpos="notext" data-icon="bars"></a>
+			<h1>Interesting Details</h1>
+			<a href="index.html" data-role="button" data-iconpos="notext" data-icon="home"></a>
+		</div><!--HEADER-->
+		<div data-role="content">
+			<div>
+				<!--Be sure to switch between data theme "c" and "d"-->
+				<!--Copy more from <ul *to* /ul> if more themes needed and change ^^^-->
+				<ul data-role="listview" data-inset="true">
+					<li data-theme="d">Despite being published only a decade ago (2003) it evolved as both 
+					a critically acclaimed and critically challenged novel very quickly. 
+					A movie version was even made just 4 years after the novel was published.  
+					The novel has landed on several national and international bestsellers lists.</li>
+				</ul>
+				
+				<ul data-role="listview" data-inset="true">
+					<li data-theme="c">Khaled Hosseini published another novel, A Thousand Splendid Suns, in 2007.  
+					This novel is not a sequel to The Kite Runner, however it focuses on similar topics and plights, 
+					this time following two Afghan women during essentially the same time period as his first novel. 
+					It also went on to be a best seller.</li>
+				</ul>
+				
+				<ul data-role="listview" data-inset="true">
+					<li data-theme="d">Hosseini is an Afghan born American citizen. He was born around the same 
+					time he set this novel, and experienced the tumultuous events that rocked his home country. 
+					However at much less of an extent than his protagonists, as he moved to Iran at a young age, 
+					and eventually moved to France and then America.</li>
+				</ul>
+			</div>
+		</div><!--CONTENT-->
+		<div data-role="footer" data-id="fixfoot" data-position="fixed" data-tap-toggle="false">
+			<!--Replace the text below with the name of the book-->
+			<h3>The Kite Runner</h3>
+		</div><!--FOOTER-->
+	</div><!--PAGE-->
+</body>
+</html>
